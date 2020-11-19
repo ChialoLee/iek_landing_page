@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <img
+        src="img/light-city.png"
+        alt="light-city"
+        width="100%"
+        height="450px"
+      />
+    </div>
+
+    <div class="jumbotron text-center" style="width: 100%; height: 270px;">
+        <h1 align="center">My First Bootstrap Page</h1>
+          <p>Resize this responsive page to see the effect!</p>
+    </div>  
+
+
+  <div class="container" style="height: 700px;">
+    <div class="row pb-5 pt-5">
+      <div class="col-md-4 my-auto">
+        <img src="img/index-icon/001-B02-analytics.png" style="width: 75px; height: 75px" alt="圖001左右比較圖-001-B02-analytics">
+        <h3 class="pt-3" style="color:#2868b1">臺灣產業產值與同期比較</h3>
+        <p style="color:#072448">可關注新興能源產值</p>
+        <hr style="height:1px;border-width:0;color:#363434;background-color:#363434">
+        <p1 style="color:#6e7073">
+          台灣半導體產值包含IC設計業產值、IC製造業產值、IC封裝業產值及IC測試業產值。研院產科國際所產業分析師預估。
+        </p1>
+      </div>
+      <div class="col-md-8 my-auto">
+        <div
+          style="width: 100%; height: 500px;"
+          id="chartdiv-divergent-bar"
+        ></div>
+      </div>
+    </div>
+    </div> 
+
+    <div class="graybg">
+        <div class="container" style="height: 700px;">
+            <div class="row pb-5 pt-5">
+                <div class="col-md-8 my-auto">
+                  <div style="width: 100%; height: 500px;" id="chartdiv-run"></div>
+                </div>
+                <div class="col-md-4 my-auto">
+                  <img src="img/index-icon/002-B02-crown.png" style="width: 75px; height: 75px" alt="圖002操場圖-002-B02-crown">
+                  <h3 class="pt-3" style="color:#2868b1">2020 臺灣產業附加價值率</h3>
+                  <p style="color:#072448">電子零組件產業居冠</p>
+                  <hr style="height:1px;border-width:0;color:#363434;background-color:#363434">
+                  <p1 style="color:#6e7073">
+                    台灣半導體產值包含IC設計業產值、IC製造業產值、IC封裝業產值及IC測試業產值。研院產科國際所產業分析師預估。
+                  </p1>
+                </div>
+             </div>  
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <div class="row pb-5 pt-5">
+      <div class="col-md-4 my-auto">
+        <h3>臺灣產業聚落分佈</h3>
+        <p>北部半導體、中南部工具機</p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris... Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris... Ut enim ad minim veniam, quis nostrud
+        </p>
+      </div>
+      <div class="col-md-8">
+        <div
+          style="width: 100%; height: 500px;"
+          id="chartdiv-map-light"
+        ></div>
+      </div>
+    </div>
+
+    <!-- <div class="row pb-5 pt-5">
+      <div class="col-md-8">
+        <div style="width: 100%; height: 500px;" id="chartdiv-map-dark"></div>
+      </div>
+      <div class="col-md-4 my-auto">
+        <h3>臺灣產業聚落分佈</h3>
+        <p>我是深色版</p>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris... Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris... Ut enim ad minim veniam, quis nostrud
+        </p>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="am-divergent-stacked-bars.js"></script>
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/timeline.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/bullets.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="run-data.js"></script>
+    <script src="am-run.js"></script>
+
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://covid.amCharts.com/data/js/world_timeline.js"></script>
+    <script src="https://covid.amCharts.com/data/js/total_timeline.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/spiritedaway.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="am-map.js"></script>
+    <script src="am-map-dark.js"></script>
+  </body>
+</html>
